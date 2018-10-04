@@ -18,3 +18,13 @@
     margin:auto;
     line-height: 2;
 }
+
+.application {
+    color: black;
+    border: 3px solid #126bc5;
+    margin:auto;
+    width: 30%;
+    border-radius: 5px;
+    min-height: 300px;
+    text-align: center;
+}

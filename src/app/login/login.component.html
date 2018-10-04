@@ -3,5 +3,5 @@
   <select [(ngModel)]="selectedUser">
     <option *ngFor="let user of users">{{user}}</option>
   </select>
+  <button (click)="login(selectedUser)">Login</button>
 </div>
-<button (click)="login(selectedUser)">login</button>

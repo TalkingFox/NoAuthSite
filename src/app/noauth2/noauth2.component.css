@@ -1,0 +1,20 @@
+.intro {
+    padding-top: 7%;
+    text-align: center;
+}
+
+.wrapper {
+    padding-top: 3%;
+    background-color: white;
+}
+
+.text {
+    width: 45%;
+    margin: auto;
+    padding-bottom: 50px;
+    background-color: white;
+    color: #5c666f;
+    width: 40%;
+    margin:auto;
+    line-height: 2;
+}

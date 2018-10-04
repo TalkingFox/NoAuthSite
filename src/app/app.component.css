@@ -13,13 +13,25 @@ nav {
 a {
     padding: 0 15px;
     line-height: 7;
+    text-decoration: none;
+    color: white;
+    transition: 250ms;
 }
 
-.body {
-    padding-top: 125px;
+a:hover {
+    color: #d63aff;;
+    text-shadow: 2px 4px 3px rgba(255,255,255,0.3);
 }
 
 .footer {
     text-align: center;
     margin: 25px;
+}
+
+.logo {
+    position: absolute;
+    width: 7%;
+    border-radius: 15px;
+    left: 15%;
+    top: 20%;
 }

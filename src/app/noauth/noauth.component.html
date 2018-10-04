@@ -12,6 +12,6 @@
             After that, they can simply login and access their profile. 
             It's that simple!</p>
         </div>
-    <app-login></app-login>
-    <app-profile></app-profile>
+    <app-login *ngIf="!isLoggedIn" (loggedIn)="loggedIn($event)"></app-login>
+    <app-profile *ngIf="isLoggedIn" [username]="username" (returned)="returned()"></app-profile> -->
 </div>

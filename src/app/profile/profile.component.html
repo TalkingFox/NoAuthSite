@@ -1,3 +1,31 @@
-<p>
-  profile works!
-</p>
+<div class="window">
+  <div>
+    <label>First Name</label>
+    <input [(ngModel)]="firstName" readonly>
+  </div>
+  <div>
+    <label>Last Name</label>
+    <input [(ngModel)]="lastName" readonly>
+  </div>
+  <div>
+    <label>Phone Number</label>
+    <input [(ngModel)]="phone" readonly>
+  </div>
+  <div>
+    <label>Social Security Number</label>
+    <input [(ngModel)]="social" readonly>
+  </div>
+  <div>
+    <label>Credit Card Number</label>
+    <input [(ngModel)]="credit" readonly>
+  </div>
+  <div>
+    <label>Password Hash</label>
+    <input [(ngModel)]="passHash" readonly>
+  </div>
+  <div>
+    <label>Password</label>
+    <input [(ngModel)]="pass" readonly>
+  </div>
+  <button (click)="returnClicked()">Return</button>
+</div>

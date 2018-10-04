@@ -1,3 +1,7 @@
-<p>
-  login works!
-</p>
+<div class="logingroup">
+  <label>Username</label>
+  <select [(ngModel)]="selectedUser">
+    <option *ngFor="let user of users">{{user}}</option>
+  </select>
+</div>
+<button (click)="login(selectedUser)">login</button>

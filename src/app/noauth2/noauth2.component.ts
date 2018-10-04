@@ -9,7 +9,19 @@ export class Noauth2Component implements OnInit {
 
   constructor() { }
 
+  public isLoggedIn = false;
+  public username = '';
+
   ngOnInit() {
+  }
+
+  public loggedIn(username) {
+    this.isLoggedIn = true;
+    this.username = username;
+  }
+
+  public returned() {
+    this.isLoggedIn = false;
   }
 
 }

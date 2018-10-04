@@ -3,15 +3,19 @@
 </div>
 <div class="wrapper">
     <div class="text">
-        <p>The use of <span>NoAuth</span> version 2 is simple. 
-        For any case where the user needs to provide credentials, assume they are correct.
-        This is the basis for a trusting relationship.</p>
-        
-        <p>In the event you believe a user will try to wrongly impersonate someone else, be sure to provide a <kbd>lying</kbd> field for the user to select.
-        This is the key innovation of <span>NoAuth</span> version 2.
-        This guarantees that only the person who owns the account will be able to access it.
-        </p>        
-        </div>
-    <app-login></app-login>
-    <app-profile></app-profile>
+        <p>The use of <span>NoAuth</span> version 2 is simple.
+            For any case where the user needs to provide credentials, assume they are correct.
+            This is the basis for a trusting relationship.</p>
+
+        <p>In the event you believe a user will try to wrongly impersonate someone else, be sure to provide a <kbd>lying</kbd>
+            field for the user to select.
+            This is the key innovation of <span>NoAuth</span> version 2.
+            This guarantees that only the person who owns the account will be able to access it.
+        </p>
+    </div>
+    <div class="application">
+        <h3>Welcome to My Secure App!</h3>
+        <app-login *ngIf="!isLoggedIn" (loggedIn)="loggedIn($event)" [hasLyingSupport]="true"></app-login>
+        <app-profile *ngIf="isLoggedIn" [username]="username" (returned)="returned()"></app-profile>
+    </div>
 </div>

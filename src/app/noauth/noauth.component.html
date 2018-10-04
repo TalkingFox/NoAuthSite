@@ -3,15 +3,16 @@
 </div>
 <div class="wrapper">
     <div class="text">
-        <p>The use of <span>NoAuth</span> version 1 is simple. 
-        For any case where the user needs to provide credentials, assume they are correct.
-        This is the basis for a trusting relationship. 
-        Who's going to know the user's credentials better than themselves?</p>
+        <p>The use of <span>NoAuth</span> version 1 is simple.
+            For any case where the user needs to provide credentials, assume they are correct.
+            This is the basis for a trusting relationship.
+            Who's going to know the user's credentials better than themselves?</p>
 
-        <p>As you can see in the example app below, we provide a simple combobox full of credentials to allow the user to find their account more quickly.
-            After that, they can simply login and access their profile. 
+        <p>As you can see in the example app below, we provide a simple combobox full of credentials to allow the user
+            to find their account more quickly.
+            After that, they can simply login and access their profile.
             It's that simple!</p>
-        </div>
+    </div>
     <div class="application">
         <h3>Welcome to My Secure App!</h3>
         <app-login *ngIf="!isLoggedIn" (loggedIn)="loggedIn($event)"></app-login>

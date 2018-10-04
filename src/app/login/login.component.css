@@ -3,6 +3,16 @@
 }
 
 label {
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+  }
+  
+  input {
+    display: inline-block;
+  }
+
+label {
     margin-right: 10px;
 }
 
@@ -12,6 +22,7 @@ select {
 }
 
 button {
+    margin-top: 10px;
     color: white;
     background: #126bc5;
     font-size: 14px;
@@ -19,3 +30,45 @@ button {
     border: none;
     padding: 5px 32px;
 }
+
+input[type = checkbox] {
+    display: none;
+}
+
+input + label {
+    font-size: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid var(--blue);
+    border-radius: 50%;
+    background: var(--darkblue);
+    transition: .1s all;
+    cursor: pointer;
+    z-index: 999 !important;
+  }
+
+  input + label:hover {
+    transform: scale(.95);
+  }
+  
+  input + label:after {
+    content: "😇";
+  }
+  
+  input:checked + label {
+    background: var(--blue);
+    transform: scale(1.1);
+  }
+  
+  
+  input:checked + label:hover {
+    background: var(--blue);
+    transform: scale(1.05);
+  }
+  
+  input:checked + label:after {
+    content: "😈";
+  }

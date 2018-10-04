@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -9,6 +9,7 @@ export class LoginComponent implements OnInit {
   constructor() {}
 
   @Output() loggedIn = new EventEmitter<string>();
+  @Input() hasLyingSupport = false;
 
   public users: string[] = [
     'Faustino Boney',

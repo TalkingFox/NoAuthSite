@@ -9,3 +9,12 @@ span {
     color: #d63aff;;
     text-shadow: 2px 4px 3px rgba(255,255,255,0.3);
 }
+
+.flex {
+    display: flex;
+}
+
+.flex.center {
+    align-items: center;
+    justify-content: center;
+}

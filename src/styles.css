@@ -1,64 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-
 body {
     background: black;
     font-family: 'Open Sans', sans-serif;
     color:white;
-}
-
-nav {
-    background: black;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    border-bottom: 1px solid gold;
-    color:white;
-    text-align: center;
-    margin-top: -10px;
+    margin:0;
 }
 
 span {
     color: #d63aff;;
     text-shadow: 2px 4px 3px rgba(255,255,255,0.3);
-}
-
-a {
-    padding: 0 15px;
-    line-height: 7;
-}
-
-.main {
-    padding: 150px 0px 25px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.trust {
-    width:100%;
-    height:auto;
-}
-
-.spacer {
-    height: 50px;
-    background-color: silver;
-}
-
-.trustDivTheTrustmaker {
-    position: relative;
-}
-
-.trustDivTheTrustmaker >a {
-    margin-top: 75px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    border-radius: 5px;
-    background-color: #d63aff;;
-    text-decoration: none;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 2;
-    font-weight: 900;
 }

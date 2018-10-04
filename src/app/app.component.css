@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+nav {
+    background: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid gold;
+    color:white;
+    text-align: center;
+    margin-top: -10px;
+}
+
+a {
+    padding: 0 15px;
+    line-height: 7;
+}
+
+.body {
+    padding-top: 125px;
+}
+
+.footer {
+    text-align: center;
+    margin: 25px;
+}

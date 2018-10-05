@@ -11,6 +11,8 @@ export class LoginComponent implements OnInit {
   @Output() loggedIn = new EventEmitter<string>();
   @Input() hasLyingSupport = false;
 
+  public error: string;
+
   public users: string[] = [
     'Faustino Boney',
     'Tori Meriwether',
@@ -38,7 +40,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {}
 
-  public login(selectedUser): void {
+  public login(selectedUser: string, isEvil: boolean): void {
+    if (isEvil) {
+      this.error = `Sorry, only the real ${selectedUser} is allowed to access their profile`;
+      return;
+    }
+    this.error = '';
     this.loggedIn.emit(selectedUser);
   }
 }

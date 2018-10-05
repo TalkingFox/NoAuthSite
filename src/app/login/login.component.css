@@ -72,3 +72,16 @@ input + label {
   input:checked + label:after {
     content: "😈";
   }
+
+  .error {
+    margin: auto;
+    width: 90%;
+    background-color: #FFBABA;
+    color: #D8000C;
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  .padItSome {
+    padding-bottom: 15px;
+  }

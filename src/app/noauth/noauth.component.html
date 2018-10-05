@@ -14,7 +14,7 @@
             It's that simple!</p>
     </div>
     <div class="application">
-        <h3>Welcome to My Secure App!</h3>
+        <h3>My Secure App!</h3>
         <app-login *ngIf="!isLoggedIn" (loggedIn)="loggedIn($event)"></app-login>
         <app-profile *ngIf="isLoggedIn" [username]="username" (returned)="returned()"></app-profile>
     </div>

@@ -10,6 +10,7 @@ export class LoginComponent implements OnInit {
 
   @Output() loggedIn = new EventEmitter<string>();
   @Input() hasLyingSupport = false;
+  public isEvil: boolean;
 
   public error: string;
 
